@@ -1,4 +1,4 @@
-# Install script for directory: D:/DataStructures
+# Install script for directory: D:/data-structures
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/DataStructures/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/data-structures/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

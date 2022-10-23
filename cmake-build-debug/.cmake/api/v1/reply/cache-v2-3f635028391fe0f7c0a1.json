@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/DataStructures/cmake-build-debug"
+			"value" : "d:/data-structures/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/DataStructures"
+			"value" : "D:/data-structures"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/ninja/win/ninja.exe"
+			"value" : "C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/DataStructures/cmake-build-debug"
+			"value" : "D:/data-structures/cmake-build-debug"
 		},
 		{
 			"name" : "DataStructures_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/DataStructures"
+			"value" : "D:/data-structures"
 		}
 	],
 	"kind" : "cache",

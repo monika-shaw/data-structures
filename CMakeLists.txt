@@ -7,3 +7,5 @@ include_directories(.)
 
 add_executable(Node
         Node.cpp)
+add_executable(First First.cpp)
+add_executable(Last Last.cpp)

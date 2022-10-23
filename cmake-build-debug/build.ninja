@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/DataStructures/cmake-build-debug/
+cmake_ninja_workdir = D$:/data-structures/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target Node
 
@@ -49,10 +49,10 @@ cmake_ninja_workdir = D$:/DataStructures/cmake-build-debug/
 
 build cmake_object_order_depends_target_Node: phony || CMakeFiles/Node.dir
 
-build CMakeFiles/Node.dir/Node.cpp.obj: CXX_COMPILER__Node_Debug D$:/DataStructures/Node.cpp || cmake_object_order_depends_target_Node
+build CMakeFiles/Node.dir/Node.cpp.obj: CXX_COMPILER__Node_Debug D$:/data-structures/Node.cpp || cmake_object_order_depends_target_Node
   DEP_FILE = CMakeFiles\Node.dir\Node.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  INCLUDES = -ID:/DataStructures/.
+  INCLUDES = -ID:/data-structures/.
   OBJECT_DIR = CMakeFiles\Node.dir
   OBJECT_FILE_DIR = CMakeFiles\Node.dir
 
@@ -74,12 +74,80 @@ build Node.exe: CXX_EXECUTABLE_LINKER__Node_Debug CMakeFiles/Node.dir/Node.cpp.o
   TARGET_IMPLIB = libNode.dll.a
   TARGET_PDB = Node.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target First
+
+
+#############################################
+# Order-only phony target for First
+
+build cmake_object_order_depends_target_First: phony || CMakeFiles/First.dir
+
+build CMakeFiles/First.dir/First.cpp.obj: CXX_COMPILER__First_Debug D$:/data-structures/First.cpp || cmake_object_order_depends_target_First
+  DEP_FILE = CMakeFiles\First.dir\First.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -ID:/data-structures/.
+  OBJECT_DIR = CMakeFiles\First.dir
+  OBJECT_FILE_DIR = CMakeFiles\First.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target First
+
+
+#############################################
+# Link the executable First.exe
+
+build First.exe: CXX_EXECUTABLE_LINKER__First_Debug CMakeFiles/First.dir/First.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\First.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = First.exe
+  TARGET_IMPLIB = libFirst.dll.a
+  TARGET_PDB = First.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Last
+
+
+#############################################
+# Order-only phony target for Last
+
+build cmake_object_order_depends_target_Last: phony || CMakeFiles/Last.dir
+
+build CMakeFiles/Last.dir/Last.cpp.obj: CXX_COMPILER__Last_Debug D$:/data-structures/Last.cpp || cmake_object_order_depends_target_Last
+  DEP_FILE = CMakeFiles\Last.dir\Last.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -ID:/data-structures/.
+  OBJECT_DIR = CMakeFiles\Last.dir
+  OBJECT_FILE_DIR = CMakeFiles\Last.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Last
+
+
+#############################################
+# Link the executable Last.exe
+
+build Last.exe: CXX_EXECUTABLE_LINKER__Last_Debug CMakeFiles/Last.dir/Last.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Last.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Last.exe
+  TARGET_IMPLIB = libLast.dll.a
+  TARGET_PDB = Last.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\DataStructures\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\data-structures\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -90,7 +158,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\DataStructures\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\DataStructures -BD:\DataStructures\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\data-structures\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\data-structures -BD:\data-structures\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -100,6 +168,10 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build First: phony First.exe
+
+build Last: phony Last.exe
+
 build Node: phony Node.exe
 
 # =============================================================================
@@ -108,9 +180,9 @@ build Node: phony Node.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/DataStructures/cmake-build-debug
+# Folder: D:/data-structures/cmake-build-debug
 
-build all: phony Node.exe
+build all: phony Node.exe First.exe Last.exe
 
 # =============================================================================
 # Built-in targets

@@ -149,8 +149,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/DataStructures/cmake-build-debug",
-		"source" : "D:/DataStructures"
+		"build" : "D:/data-structures/cmake-build-debug",
+		"source" : "D:/data-structures"
 	},
 	"version" : 
 	{

@@ -142,6 +142,40 @@ build Last.exe: CXX_EXECUTABLE_LINKER__Last_Debug CMakeFiles/Last.dir/Last.cpp.o
   TARGET_IMPLIB = libLast.dll.a
   TARGET_PDB = Last.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Position
+
+
+#############################################
+# Order-only phony target for Position
+
+build cmake_object_order_depends_target_Position: phony || CMakeFiles/Position.dir
+
+build CMakeFiles/Position.dir/Position.cpp.obj: CXX_COMPILER__Position_Debug D$:/data-structures/Position.cpp || cmake_object_order_depends_target_Position
+  DEP_FILE = CMakeFiles\Position.dir\Position.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -ID:/data-structures/.
+  OBJECT_DIR = CMakeFiles\Position.dir
+  OBJECT_FILE_DIR = CMakeFiles\Position.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Position
+
+
+#############################################
+# Link the executable Position.exe
+
+build Position.exe: CXX_EXECUTABLE_LINKER__Position_Debug CMakeFiles/Position.dir/Position.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Position.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Position.exe
+  TARGET_IMPLIB = libPosition.dll.a
+  TARGET_PDB = Position.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -174,6 +208,8 @@ build Last: phony Last.exe
 
 build Node: phony Node.exe
 
+build Position: phony Position.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -182,7 +218,7 @@ build Node: phony Node.exe
 #############################################
 # Folder: D:/data-structures/cmake-build-debug
 
-build all: phony Node.exe First.exe Last.exe
+build all: phony Node.exe First.exe Last.exe Position.exe
 
 # =============================================================================
 # Built-in targets

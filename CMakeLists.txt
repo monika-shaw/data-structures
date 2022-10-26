@@ -9,3 +9,4 @@ add_executable(Node
         Node.cpp)
 add_executable(First First.cpp)
 add_executable(Last Last.cpp)
+add_executable(Position Position.cpp)

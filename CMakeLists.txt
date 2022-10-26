@@ -10,3 +10,4 @@ add_executable(Node
 add_executable(First First.cpp)
 add_executable(Last Last.cpp)
 add_executable(Position Position.cpp)
+add_executable(Linkedlist Linkedlist.cpp)

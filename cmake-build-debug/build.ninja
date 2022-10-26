@@ -176,6 +176,40 @@ build Position.exe: CXX_EXECUTABLE_LINKER__Position_Debug CMakeFiles/Position.di
   TARGET_IMPLIB = libPosition.dll.a
   TARGET_PDB = Position.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Linkedlist
+
+
+#############################################
+# Order-only phony target for Linkedlist
+
+build cmake_object_order_depends_target_Linkedlist: phony || CMakeFiles/Linkedlist.dir
+
+build CMakeFiles/Linkedlist.dir/Linkedlist.cpp.obj: CXX_COMPILER__Linkedlist_Debug D$:/data-structures/Linkedlist.cpp || cmake_object_order_depends_target_Linkedlist
+  DEP_FILE = CMakeFiles\Linkedlist.dir\Linkedlist.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -ID:/data-structures/.
+  OBJECT_DIR = CMakeFiles\Linkedlist.dir
+  OBJECT_FILE_DIR = CMakeFiles\Linkedlist.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Linkedlist
+
+
+#############################################
+# Link the executable Linkedlist.exe
+
+build Linkedlist.exe: CXX_EXECUTABLE_LINKER__Linkedlist_Debug CMakeFiles/Linkedlist.dir/Linkedlist.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Linkedlist.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Linkedlist.exe
+  TARGET_IMPLIB = libLinkedlist.dll.a
+  TARGET_PDB = Linkedlist.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -206,6 +240,8 @@ build First: phony First.exe
 
 build Last: phony Last.exe
 
+build Linkedlist: phony Linkedlist.exe
+
 build Node: phony Node.exe
 
 build Position: phony Position.exe
@@ -218,7 +254,7 @@ build Position: phony Position.exe
 #############################################
 # Folder: D:/data-structures/cmake-build-debug
 
-build all: phony Node.exe First.exe Last.exe Position.exe
+build all: phony Node.exe First.exe Last.exe Position.exe Linkedlist.exe
 
 # =============================================================================
 # Built-in targets

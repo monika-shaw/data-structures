@@ -77,6 +77,7 @@ int main()
 
 
     fourth->data = 66;
+
     fourth->next = NULL;
     printList(head);
 

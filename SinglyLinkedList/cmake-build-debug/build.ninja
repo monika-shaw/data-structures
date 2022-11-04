@@ -346,6 +346,108 @@ build Search.exe: CXX_EXECUTABLE_LINKER__Search_Debug CMakeFiles/Search.dir/Sear
   TARGET_IMPLIB = libSearch.dll.a
   TARGET_PDB = Search.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Delete1
+
+
+#############################################
+# Order-only phony target for Delete1
+
+build cmake_object_order_depends_target_Delete1: phony || CMakeFiles/Delete1.dir
+
+build CMakeFiles/Delete1.dir/Delete1.cpp.obj: CXX_COMPILER__Delete1_Debug D$:/data-structures/SinglyLinkedList/Delete1.cpp || cmake_object_order_depends_target_Delete1
+  DEP_FILE = CMakeFiles\Delete1.dir\Delete1.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -ID:/data-structures/SinglyLinkedList/.
+  OBJECT_DIR = CMakeFiles\Delete1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Delete1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Delete1
+
+
+#############################################
+# Link the executable Delete1.exe
+
+build Delete1.exe: CXX_EXECUTABLE_LINKER__Delete1_Debug CMakeFiles/Delete1.dir/Delete1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Delete1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Delete1.exe
+  TARGET_IMPLIB = libDelete1.dll.a
+  TARGET_PDB = Delete1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Delete2
+
+
+#############################################
+# Order-only phony target for Delete2
+
+build cmake_object_order_depends_target_Delete2: phony || CMakeFiles/Delete2.dir
+
+build CMakeFiles/Delete2.dir/Delete2.cpp.obj: CXX_COMPILER__Delete2_Debug D$:/data-structures/SinglyLinkedList/Delete2.cpp || cmake_object_order_depends_target_Delete2
+  DEP_FILE = CMakeFiles\Delete2.dir\Delete2.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -ID:/data-structures/SinglyLinkedList/.
+  OBJECT_DIR = CMakeFiles\Delete2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Delete2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Delete2
+
+
+#############################################
+# Link the executable Delete2.exe
+
+build Delete2.exe: CXX_EXECUTABLE_LINKER__Delete2_Debug CMakeFiles/Delete2.dir/Delete2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Delete2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Delete2.exe
+  TARGET_IMPLIB = libDelete2.dll.a
+  TARGET_PDB = Delete2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Delete3
+
+
+#############################################
+# Order-only phony target for Delete3
+
+build cmake_object_order_depends_target_Delete3: phony || CMakeFiles/Delete3.dir
+
+build CMakeFiles/Delete3.dir/Delete3.cpp.obj: CXX_COMPILER__Delete3_Debug D$:/data-structures/SinglyLinkedList/Delete3.cpp || cmake_object_order_depends_target_Delete3
+  DEP_FILE = CMakeFiles\Delete3.dir\Delete3.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -ID:/data-structures/SinglyLinkedList/.
+  OBJECT_DIR = CMakeFiles\Delete3.dir
+  OBJECT_FILE_DIR = CMakeFiles\Delete3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Delete3
+
+
+#############################################
+# Link the executable Delete3.exe
+
+build Delete3.exe: CXX_EXECUTABLE_LINKER__Delete3_Debug CMakeFiles/Delete3.dir/Delete3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Delete3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Delete3.exe
+  TARGET_IMPLIB = libDelete3.dll.a
+  TARGET_PDB = Delete3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -374,6 +476,12 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build Array: phony Array.exe
 
+build Delete1: phony Delete1.exe
+
+build Delete2: phony Delete2.exe
+
+build Delete3: phony Delete3.exe
+
 build First: phony First.exe
 
 build Last: phony Last.exe
@@ -398,7 +506,7 @@ build Search: phony Search.exe
 #############################################
 # Folder: D:/data-structures/SinglyLinkedList/cmake-build-debug
 
-build all: phony Node.exe First.exe Last.exe Position.exe Linkedlist.exe Reverse.exe Length.exe Array.exe Search.exe
+build all: phony Node.exe First.exe Last.exe Position.exe Linkedlist.exe Reverse.exe Length.exe Array.exe Search.exe Delete1.exe Delete2.exe Delete3.exe
 
 # =============================================================================
 # Built-in targets

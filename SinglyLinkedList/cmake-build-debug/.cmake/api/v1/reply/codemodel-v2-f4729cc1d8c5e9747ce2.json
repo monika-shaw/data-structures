@@ -23,7 +23,10 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -46,7 +49,10 @@
 						5,
 						6,
 						7,
-						8
+						8,
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -57,6 +63,27 @@
 					"id" : "Array::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Array-Debug-c10fbd068281092348ac.json",
 					"name" : "Array",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Delete1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Delete1-Debug-7c1cc472742b0a9f7b15.json",
+					"name" : "Delete1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Delete2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Delete2-Debug-5b4a776178ef10136c81.json",
+					"name" : "Delete2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Delete3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Delete3-Debug-a9701d4adba2d9995b7b.json",
+					"name" : "Delete3",
 					"projectIndex" : 0
 				},
 				{
